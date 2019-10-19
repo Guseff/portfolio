@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="head">
+      <img class="head-avatar" alt="" src="./assets/images/20190601_113816.jpg">
+      <div class="head-wrapper">
+        <div class="head-name">Vasily Gusev</div>
+        <ul  class="head-list">
+          <li><a href="https://github.com/Guseff/">GitHub</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100015333816189">FaceBook</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="ed">
+        <button id="ed_btn" class="education-btn">Education</button>
+        <div id="ed_panel" class="panel">
+          <ul class="ed_list">
+            <li>School <br><span class="ed_years">1977 - 1987</span></li>
+            <li>University (MIPT) <br><span class="ed_years">1987 - 1993</span></li>
+            <li>RSSchool Courses <br><span class="ed_years">2019 - 2020</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="proj">
+        <div class="proj-title">
+          Projects
+        </div>
+        <div id="swipezone" class="slider_wrap">
+        
+          <div class="proj-slider fade">
+            <div class="proj-slider-descr">
+              <div class="proj-slider-descr_title">
+                Repair Project <button class="sw_button" id="sw_btn_1">Show<br>description</button>
+              </div>
+              <div class="proj-slider-descr_text">
+                <p>Desktop ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+              <div class="proj-slider-descr_mob" id="descr_1">
+                <p>Mobile ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+              <div class="proj-slider-descr-tap">Tap image to see more --></div>
+            </div>
+            <button class="proj-slider_btn" id="re_btn"><img src="./assets/images/repair-screen.jpg"></button>
+          </div>
+
+          <div class="proj-slider fade">
+            <div class="proj-slider-descr">
+              <div class="proj-slider-descr_title">
+                Theyalow Project <button class="sw_button" id="sw_btn_2">Show<br>description</button>
+              </div>
+              <div class="proj-slider-descr_text">
+                <p>Desktop ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+              <div class="proj-slider-descr_mob" id="descr_2">
+                <p>Mobile ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+              <div class="proj-slider-descr-tap">Tap image to see more --></div>
+            </div>
+            <button class="proj-slider_btn" id="th_btn"><img src="./assets/images/theyalow-screen.png"></button>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="proj-prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="proj-next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+      <footer class="footer">Portfolio - 2019</footer>
+      
+    </main>
+  </div>
+  <div class="iframe-wrap" id="iwrap">
+    <iframe class="iframe" id="iframe" frameborder="0"></iframe>
+    <button class="iframe-button" id="back-button">Back</button>
+    <button class="iframe-button" id="mode-button">Desktop</button>
+  </div>
+  <script src="portfolio.js"></script>
+</body>
+</html>
